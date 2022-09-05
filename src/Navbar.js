@@ -5,28 +5,28 @@ function NavBar() {
     return (
         <nav className="NavBar">
             <NavLink to="/"
-                style={isActive => ({
+                style={({isActive}) => ({
                     color: isActive ? "green" : "blue"
                 })}>
                 VendingMachine
             </NavLink>
             <br />
             <NavLink to="/soda"
-                style={isActive => ({
+                style={({isActive}) => ({
                     color: isActive ? "green" : "blue"
                 })}>
                 Soda
             </NavLink>
             <br />
             <NavLink to="/chips"
-                style={isActive => ({
+                style={({isActive}) => ({
                     color: isActive ? "green" : "blue"
                 })}>
                 Chips
             </NavLink>
             <br />
             <NavLink to="/sardines"
-                style={isActive => ({
+                style={({isActive}) => ({
                     color: isActive ? "green" : "blue"
                 })}>
                 Sardines
